@@ -1,0 +1,9 @@
+With this script you can dump all vehicle json into graphite for longer term logging of data, monitoring driving details, or just having some data
+to look back on.
+
+Ben Lau Re-Worked this for OpenXC Hackathon Mashery Team - he was working on this for a few hours this weekend.
+
+Usage: tail the device, loop file system, or file that your trace or Vehicle Interface serial is connected to, and this will parse and feed
+into graphite via carbon-relay.
+
+tail -f file | open-xc-graphite.py &
